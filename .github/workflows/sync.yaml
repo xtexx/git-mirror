@@ -17,7 +17,7 @@ jobs:
       REMOTE: codeberg
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Prepare
         run: ./prepare_actions; ./prepare
       - name: Sync
@@ -31,7 +31,7 @@ jobs:
       REMOTE: codeberg-xvnet
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Prepare
         run: ./prepare_actions; ./prepare
       - name: Sync
@@ -45,7 +45,7 @@ jobs:
       REMOTE: disroot
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Prepare
         run: ./prepare_actions; ./prepare
       - name: Sync
@@ -59,7 +59,7 @@ jobs:
       REMOTE: pub.solar
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Prepare
         run: ./prepare_actions; ./prepare
       - name: Sync
@@ -74,7 +74,7 @@ jobs:
       REMOTE: github
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Prepare
         run: ./prepare_actions; ./prepare
       - name: Sync
